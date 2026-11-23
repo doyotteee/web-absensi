@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#4f46e5"/><circle cx="32" cy="32" r="17" fill="none" stroke="#fff" stroke-width="4"/><path d="M32 22v10l7 5" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="47" cy="47" r="9" fill="#f59e0b"/><path d="M43 47l3 3 5-6" stroke="#181a2e" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#FFFFFF"/>
+  <g fill="none" stroke-linecap="round">
+    <!-- Lengkungan 1: Hijau Tua NRS -->
+    <path d="M 12 48 C 18 48, 32 44, 46 22 C 49 17, 52 14, 54 12" stroke="#0A6A1E" stroke-width="6.5"/>
+    <!-- Lengkungan 2: Oranye Cerah NRS -->
+    <path d="M 10 38 C 16 38, 28 32, 40 16 C 43 12, 46 9, 48 8" stroke="#F26500" stroke-width="5.5"/>
+    <!-- Lengkungan 3: Biru Langit NRS -->
+    <path d="M 10 28 C 14 27, 24 22, 34 11 C 36 8, 38 6, 40 5" stroke="#00A8F3" stroke-width="4.5"/>
+  </g>
+</svg>

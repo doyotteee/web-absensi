@@ -1,10 +1,10 @@
 {
-  "name": "Absensi Karyawan",
-  "short_name": "Absensi",
-  "start_url": "./index.html",
-  "scope": "./",
+  "name": "NRS Ready Mix — Absensi Karyawan",
+  "short_name": "NRS Absensi",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#f4f4fb",
-  "theme_color": "#4f46e5",
+  "background_color": "#F4F6F9",
+  "theme_color": "#0A6A1E",
   "icons": [{ "src": "ikon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
 }

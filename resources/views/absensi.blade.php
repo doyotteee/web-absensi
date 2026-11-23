@@ -7,9 +7,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<meta name="theme-color" content="#4f46e5">
-<meta name="description" content="Absensi karyawan untuk UMKM & kantor kecil: check-in/out, lokasi, selfie, shift, izin, kalender, rekap bulanan.">
-<title>{{ $setting->nama_kantor ?? 'Absensi Karyawan' }}</title>
+<meta name="theme-color" content="#0A6A1E">
+<meta name="description" content="Absensi karyawan NRS Ready Mix: check-in/out, lokasi, selfie, shift, izin, kalender, rekap bulanan.">
+<title>{{ $setting->nama_kantor ?? 'NRS Ready Mix' }}</title>
 <link rel="icon" href="{{ asset('ikon.svg') }}" type="image/svg+xml">
 <link rel="manifest" href="{{ asset('manifest.json') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,8 +50,8 @@
 
 <aside class="sidebar" data-bagian="nav" aria-label="Navigasi utama">
   <div class="merek">
-    <span class="logo" aria-hidden="true"><svg><use href="#i-jam"/></svg></span>
-    <div><b data-tema-nama id="merekNama">{{ $setting->nama_kantor ?? 'CV Maju Bersama' }}</b><small>Absensi Karyawan (Laravel + SQL)</small></div>
+    <span class="logo" aria-hidden="true"><img src="{{ asset('img/logo-nrs.png') }}" alt="Logo NRS Ready Mix" onerror="this.onerror=null;this.src='{{ asset('img/logo.svg') }}'"></span>
+    <div><b data-tema-nama id="merekNama">{{ $setting->nama_kantor ?? 'NRS Ready Mix' }}</b><small>Absensi Karyawan</small></div>
   </div>
   <nav class="menu">
     <button class="nav" data-hal="absen"><svg><use href="#i-jari"/></svg><span>Absen</span></button>
@@ -65,8 +65,8 @@
 </aside>
 
 <header class="atas-hp" data-bagian="nav">
-  <span class="logo" aria-hidden="true"><svg><use href="#i-jam"/></svg></span>
-  <b data-tema-nama id="merekNamaHp">{{ $setting->nama_kantor ?? 'CV Maju Bersama' }}</b>
+  <span class="logo" aria-hidden="true"><img src="{{ asset('img/logo-nrs.png') }}" alt="Logo NRS Ready Mix" onerror="this.onerror=null;this.src='{{ asset('img/logo.svg') }}'"></span>
+  <b data-tema-nama id="merekNamaHp">{{ $setting->nama_kantor ?? 'NRS Ready Mix' }}</b>
   <button class="ikon-btn" id="bukaKiosk2" aria-label="Mode kiosk"><svg><use href="#i-kiosk"/></svg></button>
 </header>
 
@@ -229,7 +229,7 @@
 <!-- KIOSK -->
 <div class="kiosk" id="kiosk" hidden role="dialog" aria-modal="true" aria-label="Mode kiosk absensi">
   <div class="kiosk-atas">
-    <div class="merek"><span class="logo" aria-hidden="true"><svg><use href="#i-jam"/></svg></span><b data-tema-nama id="kioskMerek">{{ $setting->nama_kantor ?? 'CV Maju Bersama' }}</b></div>
+    <div class="merek"><span class="logo" aria-hidden="true"><img src="{{ asset('img/logo-nrs.png') }}" alt="Logo NRS Ready Mix" onerror="this.onerror=null;this.src='{{ asset('img/logo.svg') }}'"></span><b data-tema-nama id="kioskMerek">{{ $setting->nama_kantor ?? 'NRS Ready Mix' }}</b></div>
     <button class="btn kaca" id="tutupKiosk"><svg><use href="#i-gembok"/></svg>Keluar kiosk</button>
   </div>
   <div class="kiosk-jam"><p class="jam" id="kioskJam">08:00</p><p id="kioskTgl"></p></div>

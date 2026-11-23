@@ -16,7 +16,10 @@
   --utama-tua: color-mix(in srgb, var(--utama) 80%, #000);
   --utama-teks: color-mix(in srgb, var(--utama) 82%, var(--teks));
   --aksen-lembut: color-mix(in srgb, var(--aksen) 18%, var(--kartu));
-  --aksen-teks: color-mix(in srgb, var(--aksen) 45%, #3a2400);
+  --aksen-teks: color-mix(in srgb, var(--aksen) 55%, #2a1400);
+  --info: var(--tema-info, #00A8F3);
+  --info-lembut: color-mix(in srgb, var(--info) 14%, var(--kartu));
+  --info-teks: color-mix(in srgb, var(--info) 80%, #002e52);
   --isi-utama: var(--tema-utama-teks, #fff);
   --isi-nav: var(--tema-nav-teks, var(--teks));
   /* status kehadiran — semantik tetap supaya makna jelas */
@@ -68,7 +71,8 @@ p { margin: 0; }
 .merek { display: flex; align-items: center; gap: 11px; padding: 0 6px; }
 .merek b { display: block; font-size: 15px; font-weight: 800; letter-spacing: -.01em; line-height: 1.2; }
 .merek small { display: block; font-size: 12px; opacity: .72; }
-.logo { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--utama); color: var(--isi-utama); box-shadow: 0 6px 16px -6px color-mix(in srgb, var(--utama) 70%, transparent); flex: none; }
+.logo { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: #ffffff; color: var(--utama); box-shadow: 0 4px 14px -4px rgb(0 0 0 / .12); flex: none; padding: 4px; overflow: hidden; border: 1px solid var(--garis); }
+.logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .logo svg { width: 22px; height: 22px; stroke-width: 2.2; }
 .menu { display: flex; flex-direction: column; gap: 4px; }
 .nav { position: relative; display: flex; align-items: center; gap: 12px; min-height: 46px; padding: 0 14px; border: 0; border-radius: var(--r-kecil); background: transparent; color: inherit; font-weight: 600; text-align: left; opacity: .82; transition: background-color .2s, opacity .2s, color .2s, transform .15s; }
@@ -375,7 +379,8 @@ input[aria-invalid="true"] { border-color: var(--s-alpa); }
 .kiosk { position: fixed; inset: 0; z-index: 50; overflow-y: auto; padding: 22px clamp(16px, 4vw, 48px) 40px; color: #fff;
   background: radial-gradient(90% 60% at 80% 0%, color-mix(in srgb, var(--aksen) 30%, transparent), transparent 60%), linear-gradient(160deg, var(--utama), color-mix(in srgb, var(--utama) 55%, #0b0b1e)); animation: pudar .35s; }
 .kiosk .merek b { color: #fff; }
-.kiosk .logo { background: #fff; color: var(--utama); }
+.kiosk .logo { width: 48px; height: 48px; background: #ffffff; color: var(--utama); padding: 5px; border-radius: 14px; box-shadow: 0 6px 18px -4px rgb(0 0 0 / .25); border: none; }
+.kiosk .logo img { width: 100%; height: 100%; object-fit: contain; }
 .kiosk-atas { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 .btn.kaca { background: rgb(255 255 255 / .14); border-color: rgb(255 255 255 / .3); color: #fff; }
 .btn.kaca:hover { background: rgb(255 255 255 / .24); }
@@ -405,7 +410,8 @@ input[aria-invalid="true"] { border-color: var(--s-alpa); }
   body { grid-template-columns: 1fr; padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
   .sidebar { display: none; }
   .atas-hp { display: flex; align-items: center; gap: 10px; position: sticky; top: 0; z-index: 20; padding: 10px 16px; background: color-mix(in srgb, var(--nav) 88%, transparent); color: var(--isi-nav); backdrop-filter: blur(12px); border-bottom: 1px solid var(--garis); }
-  .atas-hp .logo { width: 36px; height: 36px; border-radius: 10px; }
+  .atas-hp .logo { width: 38px; height: 38px; border-radius: 10px; padding: 3px; background: #ffffff; }
+  .atas-hp .logo img { width: 100%; height: 100%; object-fit: contain; }
   .atas-hp b { flex: 1; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .atas-hp .ikon-btn { background: transparent; border-color: color-mix(in srgb, var(--isi-nav) 22%, transparent); }
   .nav-bawah { display: grid; grid-template-columns: repeat(6, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; background: var(--nav); color: var(--isi-nav); border-top: 1px solid var(--garis); padding: 6px 4px calc(6px + env(safe-area-inset-bottom)); }

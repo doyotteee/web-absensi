@@ -1,12 +1,13 @@
 /* kredit-maliki: Template oleh Maliki Saputra (@malikisaputra) — https://malikisaputra.biz.id. Lisensi Nonkomersial Maliki Studio: wajib kredit, dilarang dijual (lihat LICENSE). */
-/* TEMA — diubah otomatis oleh customizer Maliki Studio */
+/* TEMA — Identitas NRS Ready Mix */
 :root {
-  --tema-utama: #4f46e5;    /* warna brand utama (tombol, tautan, sorotan) */
-  --tema-aksen: #f59e0b;    /* warna aksen kedua (badge, grafik, highlight) */
+  --tema-utama: #0A6A1E;    /* Hijau Tua NRS (brand utama, tombol, navigasi aktif) */
+  --tema-aksen: #F26500;    /* Oranye Cerah NRS (aksen, sorotan, badge) */
+  --tema-info: #00A8F3;     /* Biru Langit NRS (grafik pendukung & aksen info) */
   --tema-radius: 16px;      /* sudut kartu/tombol */
-  --tema-font: "DM Sans", system-ui, sans-serif;
-  --tema-latar: #f4f4fb;   /* latar halaman */
-  --tema-panel: #ffffff;   /* kartu/panel/form */
-  --tema-nav: #ffffff;     /* sidebar/header/nav bawah */
-  --tema-teks: #181a2e;    /* teks utama */
+  --tema-font: "DM Sans", system-ui, -apple-system, sans-serif;
+  --tema-latar: #F4F6F9;    /* latar halaman mode terang */
+  --tema-panel: #FFFFFF;    /* kartu/panel/form */
+  --tema-nav: #FFFFFF;      /* sidebar/header/nav bawah */
+  --tema-teks: #444444;     /* teks utama */
 }
