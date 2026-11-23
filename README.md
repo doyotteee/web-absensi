@@ -96,9 +96,3 @@ Untuk menghubungkan ke MySQL (misal di cPanel / VPS / XAMPP):
 5. Arahkan root Nginx/Apache ke folder `/var/www/absensi/public`.
 
 ---
-
-## Kredit & Lisensi
-
-<!-- kredit-maliki -->
-Template antarmuka oleh **Maliki Saputra** ([@malikisaputra](https://malikisaputra.biz.id)).
-Lisensi Nonkomersial Maliki Studio: Wajib mempertahankan kredit footer dan header; dilarang dijual kembali sebagai produk mentah. Lihat [LICENSE](LICENSE) untuk detail lengkap.
