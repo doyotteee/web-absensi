@@ -1,5 +1,4 @@
 <!doctype html>
-<!-- kredit-maliki: Template oleh Maliki Saputra (@malikisaputra) — https://malikisaputra.biz.id. Lisensi Nonkomersial Maliki Studio: wajib kredit, dilarang dijual (lihat LICENSE). -->
 <html lang="id" data-mode="terang">
 <head>
 <script src="{{ asset('js/tema.js') }}"></script>
@@ -249,8 +248,6 @@
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<!-- kredit-maliki -->
-<p class="kredit-maliki" style="margin:24px auto 112px;padding:0 16px;text-align:center;font:12px/1.5 system-ui,sans-serif;opacity:.7">Template oleh <a href="https://malikisaputra.biz.id" target="_blank" rel="noopener" style="color:inherit">@malikisaputra</a></p>
 
 <script src="{{ asset('js/absensi-backend.js') }}"></script>
 </body>
